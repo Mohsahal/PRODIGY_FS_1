@@ -8,7 +8,7 @@ const cors = require("cors");
 
 const app = express();
 app.use(express.json());
-app.use(cors({ origin: "http://localhost:3001", credentials: true })); // Allow frontend requests
+app.use(cors({ origin: "http://localhost:3000", credentials: true })); // Allow frontend requests
 
 // Connect to MongoDB (Ensure MONGO_URI is in .env file)
 mongoose
